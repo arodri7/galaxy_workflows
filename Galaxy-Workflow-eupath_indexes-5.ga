@@ -1,0 +1,406 @@
+{
+    "a_galaxy_workflow": "true", 
+    "annotation": "", 
+    "format-version": "0.1", 
+    "name": "eupath_indexes", 
+    "steps": {
+        "0": {
+            "annotation": "6", 
+            "content_id": "snpeff_index", 
+            "errors": null, 
+            "id": 0, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool SNPEFF Create Index", 
+                    "name": "fasta_input"
+                }, 
+                {
+                    "description": "runtime parameter for tool SNPEFF Create Index", 
+                    "name": "gff_input"
+                }, 
+                {
+                    "description": "runtime parameter for tool SNPEFF Create Index", 
+                    "name": "build_dir"
+                }, 
+                {
+                    "description": "runtime parameter for tool SNPEFF Create Index", 
+                    "name": "ref_id"
+                }, 
+                {
+                    "description": "runtime parameter for tool SNPEFF Create Index", 
+                    "name": "ref_name"
+                }
+            ], 
+            "label": null, 
+            "name": "SNPEFF Create Index", 
+            "outputs": [
+                {
+                    "name": "output_file", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 208.5, 
+                "top": 238
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "snpeff_index", 
+            "tool_state": "{\"__page__\": null, \"fasta_input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"gff_input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"loc_genomes_file\": \"\\\"/mnt/galaxyIndices2/galaxy/tool-data/snpeff_genomes.loc\\\"\", \"build_dir\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"ref_id\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"loc_databases_file\": \"\\\"/mnt/galaxyIndices2/galaxy/tool-data/snpeff_databases.loc\\\"\", \"__rerun_remap_job_id__\": null, \"ref_name\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "SNPEFF: 1", 
+            "type": "tool", 
+            "uuid": "78f0be06-6f6a-44e4-b811-708b6b5d8c71", 
+            "workflow_outputs": []
+        }, 
+        "1": {
+            "annotation": "5", 
+            "content_id": "bwa_index", 
+            "errors": null, 
+            "id": 1, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool BWA Create Index", 
+                    "name": "fasta_input"
+                }, 
+                {
+                    "description": "runtime parameter for tool BWA Create Index", 
+                    "name": "build_dir"
+                }, 
+                {
+                    "description": "runtime parameter for tool BWA Create Index", 
+                    "name": "ref_id"
+                }, 
+                {
+                    "description": "runtime parameter for tool BWA Create Index", 
+                    "name": "prefix"
+                }, 
+                {
+                    "description": "runtime parameter for tool BWA Create Index", 
+                    "name": "ref_path"
+                }, 
+                {
+                    "description": "runtime parameter for tool BWA Create Index", 
+                    "name": "ref_name"
+                }
+            ], 
+            "label": null, 
+            "name": "BWA Create Index", 
+            "outputs": [
+                {
+                    "name": "output_file", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 210.5, 
+                "top": 310
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "bwa_index", 
+            "tool_state": "{\"__page__\": null, \"fasta_input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"build_dir\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"ref_id\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"prefix\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"ref_path\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"ref_name\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"loc_file\": \"\\\"/mnt/galaxyIndices2/galaxy/tool-data/bwa_index.loc\\\"\"}", 
+            "tool_version": "BWA: 1", 
+            "type": "tool", 
+            "uuid": "bcc61293-ffa3-4cfe-94e0-11f9c32c0e06", 
+            "workflow_outputs": []
+        }, 
+        "2": {
+            "annotation": "", 
+            "content_id": "hisat2_index", 
+            "errors": null, 
+            "id": 2, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool HISAT2 Create Index", 
+                    "name": "fasta_input"
+                }, 
+                {
+                    "description": "runtime parameter for tool HISAT2 Create Index", 
+                    "name": "build_dir"
+                }, 
+                {
+                    "description": "runtime parameter for tool HISAT2 Create Index", 
+                    "name": "ref_id"
+                }, 
+                {
+                    "description": "runtime parameter for tool HISAT2 Create Index", 
+                    "name": "prefix"
+                }, 
+                {
+                    "description": "runtime parameter for tool HISAT2 Create Index", 
+                    "name": "ref_path"
+                }, 
+                {
+                    "description": "runtime parameter for tool HISAT2 Create Index", 
+                    "name": "ref_name"
+                }
+            ], 
+            "label": null, 
+            "name": "HISAT2 Create Index", 
+            "outputs": [
+                {
+                    "name": "output_file", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 208, 
+                "top": 378
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "hisat2_index", 
+            "tool_state": "{\"__page__\": null, \"fasta_input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"build_dir\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"ref_id\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"prefix\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"ref_path\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"ref_name\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"loc_file\": \"\\\"/mnt/galaxyIndices2/galaxy/tool-data/hisat2_index.loc\\\"\"}", 
+            "tool_version": "HISAT: 2", 
+            "type": "tool", 
+            "uuid": "0bdc66d1-63ac-4028-ae00-f0adb89a80ec", 
+            "workflow_outputs": []
+        }, 
+        "3": {
+            "annotation": "1", 
+            "content_id": "bowtie_index", 
+            "errors": null, 
+            "id": 3, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Bowtie Create Index", 
+                    "name": "fasta_input"
+                }, 
+                {
+                    "description": "runtime parameter for tool Bowtie Create Index", 
+                    "name": "build_dir"
+                }, 
+                {
+                    "description": "runtime parameter for tool Bowtie Create Index", 
+                    "name": "ref_id"
+                }, 
+                {
+                    "description": "runtime parameter for tool Bowtie Create Index", 
+                    "name": "prefix"
+                }, 
+                {
+                    "description": "runtime parameter for tool Bowtie Create Index", 
+                    "name": "ref_path"
+                }, 
+                {
+                    "description": "runtime parameter for tool Bowtie Create Index", 
+                    "name": "ref_name"
+                }
+            ], 
+            "label": null, 
+            "name": "Bowtie Create Index", 
+            "outputs": [
+                {
+                    "name": "output_file", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 204.96875, 
+                "top": 444.953125
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "bowtie_index", 
+            "tool_state": "{\"__page__\": null, \"fasta_input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"build_dir\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"ref_id\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"prefix\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"ref_path\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"ref_name\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"loc_file\": \"\\\"/mnt/galaxyIndices2/galaxy/tool-data/bowtie_indices.loc\\\"\"}", 
+            "tool_version": "BOWTIE: 1", 
+            "type": "tool", 
+            "uuid": "8b00fec3-e4e3-4cff-ad2e-2cc475f9daed", 
+            "workflow_outputs": []
+        }, 
+        "4": {
+            "annotation": "2", 
+            "content_id": "bowtie2_index", 
+            "errors": null, 
+            "id": 4, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Bowtie2 Create Index", 
+                    "name": "fasta_input"
+                }, 
+                {
+                    "description": "runtime parameter for tool Bowtie2 Create Index", 
+                    "name": "build_dir"
+                }, 
+                {
+                    "description": "runtime parameter for tool Bowtie2 Create Index", 
+                    "name": "ref_id"
+                }, 
+                {
+                    "description": "runtime parameter for tool Bowtie2 Create Index", 
+                    "name": "prefix"
+                }, 
+                {
+                    "description": "runtime parameter for tool Bowtie2 Create Index", 
+                    "name": "ref_path"
+                }, 
+                {
+                    "description": "runtime parameter for tool Bowtie2 Create Index", 
+                    "name": "ref_name"
+                }
+            ], 
+            "label": null, 
+            "name": "Bowtie2 Create Index", 
+            "outputs": [
+                {
+                    "name": "output_file", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 204.484375, 
+                "top": 516
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "bowtie2_index", 
+            "tool_state": "{\"__page__\": null, \"fasta_input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"build_dir\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"ref_id\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"prefix\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"ref_path\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"ref_name\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"loc_file\": \"\\\"/mnt/galaxyIndices2/galaxy/tool-data/bowtie2_indices.loc\\\"\"}", 
+            "tool_version": "BOWTIE: 2", 
+            "type": "tool", 
+            "uuid": "57d3b1a4-109e-41d4-964d-811b79b08951", 
+            "workflow_outputs": []
+        }, 
+        "5": {
+            "annotation": "3", 
+            "content_id": "star_index", 
+            "errors": null, 
+            "id": 5, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool STAR Create Index", 
+                    "name": "fasta_input"
+                }, 
+                {
+                    "description": "runtime parameter for tool STAR Create Index", 
+                    "name": "build_dir"
+                }, 
+                {
+                    "description": "runtime parameter for tool STAR Create Index", 
+                    "name": "ref_id"
+                }, 
+                {
+                    "description": "runtime parameter for tool STAR Create Index", 
+                    "name": "prefix"
+                }, 
+                {
+                    "description": "runtime parameter for tool STAR Create Index", 
+                    "name": "ref_path"
+                }, 
+                {
+                    "description": "runtime parameter for tool STAR Create Index", 
+                    "name": "ref_name"
+                }
+            ], 
+            "label": null, 
+            "name": "STAR Create Index", 
+            "outputs": [
+                {
+                    "name": "output_file", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 208.96875, 
+                "top": 587.96875
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "star_index", 
+            "tool_state": "{\"__page__\": null, \"fasta_input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"gff_input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"build_dir\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"ref_id\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"prefix\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"ref_path\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"ref_name\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"loc_file\": \"\\\"/mnt/galaxyIndices2/galaxy/tool-data/star_indices.loc\\\"\"}", 
+            "tool_version": "STAR:", 
+            "type": "tool", 
+            "uuid": "e1f55ae9-46e3-44a8-a57e-779bf12feab1", 
+            "workflow_outputs": []
+        }, 
+        "6": {
+            "annotation": "4", 
+            "content_id": "gmap_index", 
+            "errors": null, 
+            "id": 6, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool GMAP Create Index", 
+                    "name": "fasta_input"
+                }, 
+                {
+                    "description": "runtime parameter for tool GMAP Create Index", 
+                    "name": "build_dir"
+                }, 
+                {
+                    "description": "runtime parameter for tool GMAP Create Index", 
+                    "name": "ref_id"
+                }, 
+                {
+                    "description": "runtime parameter for tool GMAP Create Index", 
+                    "name": "prefix"
+                }, 
+                {
+                    "description": "runtime parameter for tool GMAP Create Index", 
+                    "name": "ref_path"
+                }, 
+                {
+                    "description": "runtime parameter for tool GMAP Create Index", 
+                    "name": "ref_name"
+                }
+            ], 
+            "label": null, 
+            "name": "GMAP Create Index", 
+            "outputs": [
+                {
+                    "name": "output_file", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 202.96875, 
+                "top": 672.96875
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "gmap_index", 
+            "tool_state": "{\"__page__\": null, \"fasta_input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"build_dir\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"ref_id\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"prefix\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"ref_path\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"ref_name\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"loc_file\": \"\\\"/mnt/galaxyIndices2/galaxy/tool-data/gmap_indices.loc\\\"\"}", 
+            "tool_version": "GMAP: 1", 
+            "type": "tool", 
+            "uuid": "22e4d0a1-f714-455d-83b1-bc5f6670e8bf", 
+            "workflow_outputs": []
+        }, 
+        "7": {
+            "annotation": "4", 
+            "content_id": "delete_history", 
+            "errors": null, 
+            "id": 7, 
+            "input_connections": {
+                "input": {
+                    "id": 6, 
+                    "output_name": "output_file"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Delete history", 
+                    "name": "input"
+                }
+            ], 
+            "label": null, 
+            "name": "Delete history", 
+            "outputs": [
+                {
+                    "name": "log", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 473.140625, 
+                "top": 536.65625
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "delete_history", 
+            "tool_state": "{\"__page__\": null, \"url\": \"\\\"None\\\"\", \"__rerun_remap_job_id__\": null, \"historyid\": \"\\\"None\\\"\", \"userkey\": \"\\\"None\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "1.0.0", 
+            "type": "tool", 
+            "uuid": "ae69114c-f62f-40c5-a3a2-9fd983869cac", 
+            "workflow_outputs": []
+        }
+    }, 
+    "uuid": "73a0e58e-c3c7-40d0-afde-0862c7be293d"
+}
